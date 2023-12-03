@@ -1,7 +1,7 @@
 import { useState, createContext} from "react";
 export const LegacyContext = createContext();
 
-export default function UseContextComponent({ children }) {
+export default function UseContextComponent(props) {
     let [surName, setSurName] = useState("Kumar");
     let [homeTown, setHomeTown] = useState("Hariyana");
 
@@ -11,7 +11,7 @@ export default function UseContextComponent({ children }) {
     }
     return (
         <LegacyContext.Provider value={{userSurName: surName, userHomeTown: homeTown}}>
-            { children }
+            { props.children }
         </LegacyContext.Provider>
     )
 }
