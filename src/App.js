@@ -2,6 +2,7 @@
 
 import GrandParent from "./hooks/useContextHook/grandParentComponent";
 import Counter from "./components/incrementDecrementCounter";
+import EmployeeListingComponent from "./components/employeeListingComponent";
 
 // var applicationStore = createStore();
 
@@ -13,6 +14,7 @@ function App() {
       </header>
       <Counter></Counter>
       <GrandParent></GrandParent>
+      <EmployeeListingComponent></EmployeeListingComponent>
       </div>
   );
 }
